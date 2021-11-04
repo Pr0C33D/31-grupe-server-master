@@ -18,3 +18,4 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 ## Authors
 
 Rimantas: [Github](https://github.com/belauzas)
+Rolandas: [Github](https://github.com/pr0c33d)
