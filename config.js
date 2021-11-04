@@ -12,4 +12,8 @@ environments.production = {
     hashingSecret: 'dummy-secret-secret-secret-secret-secret-dummy'
 };
 
-module.exports = environments;
+const currentENV = typeof process.env.NODE_ENV === "string" ? process.env.NODE_ENV.toLowerCase() : '';
+const exportableEnvName = typeof environments[currentENV] === 'object' ? currentENV : 'dev';
+
+
+module.exports = environments[exportableEnvName];
